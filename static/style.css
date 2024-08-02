@@ -1,0 +1,262 @@
+*{
+     margin:0;
+     padding:0;
+     box-sizing: border-box;           
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+*,*:before,*:after {
+   -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.breadcrumb {
+     background-color: rgb(92, 198, 71) !important; 
+     color: white !important; 
+     padding: 10px; 
+   }
+   
+   
+    a.nav-link {
+     color: white !important; 
+   }
+   
+   
+   .btn-primary {
+     background-color: #007bff !important; 
+     color: white !important; 
+     margin-left: 1px; 
+   }
+   
+   nav {
+     margin-bottom: -16px; 
+   }
+   
+   section#home {
+     margin-top: -10px; 
+     padding-top: 0; 
+   }
+   
+.carousel-inner img{
+                width: 100%;
+                height: 65vh;
+}
+#aboutdiv{
+     margin-bottom: 2em;
+}
+
+#contactUs {
+     background-color:rgb(0, 0, 0) ;
+     margin-left: auto;
+     margin-right: auto;
+     padding-bottom: 1.5em;
+}
+#contactForm h3{
+     color:white
+}
+#carddiv{
+     margin-top: -1.25em;
+}
+#keepdiv h2,p{
+     line-height: 2;
+     text-align: center;
+     color: rgb(23, 22, 22);
+     
+}
+#keepdiv p{
+     line-height: 2;
+     text-align: center;
+     color: rgb(238, 230, 230);
+     text-size-adjust: 2;
+     
+}
+
+* {
+     box-sizing: border-box;
+   }
+   
+#enddiv {
+     background-color: rgb(92, 198, 71);
+     color:white;
+     text-align: left;
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 3em;
+     margin-bottom: -1.5em;
+     
+}
+/* Reset some default styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  margin-bottom: 30px;
+}
+
+.heading h2 {
+  font-size: 36px;
+  color: #008000; /* Green color for the heading */
+  margin-bottom: 10px;
+}
+
+.heading p {
+  font-size: 18px;
+  color: #777;
+}
+
+.package-list {
+  margin-top: 20px;
+}
+
+.rom-btm {
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.room-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.room-midle,
+.room-right {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.room-midle h4,
+.room-midle h6,
+.room-midle p {
+  text-align: left;
+ /* Align text to the left */
+}
+
+/* Green color for National park name */
+.room-midle h4 {
+  color: #008000;
+  font-weight: bold;
+}
+
+.room-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.room-right h5 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.view {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.view:hover {
+  background-color: #1e70bf;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .rom-btm {
+    flex-direction: column;
+  }
+
+  .room-left img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .room-midle h4,
+  .room-midle h6,
+  .room-midle p {
+    text-align: left; /* Reset text alignment for smaller screens */
+  }
+}
+
+
+.portfolio-item img {
+     width: 100%;
+     height: 200px; 
+     object-fit: cover;
+     margin-bottom: 2em; 
+   }
+#contactus{
+     background-color: rgb(92, 198, 71);
+}
+  
+#introText {
+     background-color: rgb(92, 198, 71);
+     color: white;
+     padding: 20px; 
+   }
+   
+   #introText h1 {
+     font-size: 2em; 
+   }
+   
+   #introText p {
+     font-size: 1.2em; 
+   }
+
+   #midquote{
+     background-color: rgb(0, 0, 0);
+     color: white;
+     padding: 20px; 
+     margin-bottom: 2em;
+     
+   }
+   
+   #midquote h1 {
+     font-size: 2em; 
+   }
+   
+   #midquote p {
+     font-size: 1.6em; 
+   }
+   #aboutdiv p,h2{
+     color: rgb(92, 198, 71);
+   }
+   #aboutdiv p{
+     color:black;
+   }
+   /* Add this CSS to style the image */
+.col-md-4 {
+  text-align: center;
+}
+
+.col-md-4 img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+

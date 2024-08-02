@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievement Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2>Achievement Details</h2>
+                <hr>
+                <% achievements.forEach(achievement => { %>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Event Name: <%= achievement.eventName %></h5>
+                            <p class="card-text"><strong>Event Date:</strong> <%= achievement.eventDate %></p>
+                            <p class="card-text"><strong>Event Category:</strong> <%= achievement.eventCategory %></p>
+                            <p class="card-text"><strong>Event Description:</strong> <%= achievement.eventDescription %></p>
+                            <p class="card-text"><strong>Learning Outcomes:</strong> <%= achievement.learningOutcomes %></p>
+                            <!-- Display the certificate document -->
+                            <% if (achievement.certificateDocument) { %>
+                                <h5 class="mt-4">Certificate Document</h5>
+                                <!-- Use an <img> tag for image documents or an <embed> tag for PDF documents -->
+                                <!-- For example, if the certificate document is an image -->
+                                <img src="/certificate/<%- achievement.id %>" class="img-fluid" alt="Certificate Document">
+                            <% } else { %>
+                                <p>No certificate document available.</p>
+                            <% } %>
+                            <!-- Add more details as needed -->
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

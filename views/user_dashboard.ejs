@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10px;
+            min-height: 100vh;
+            background: #1BB295;
+        }
+        
+        .container {
+            margin-top: 5rem;
+        }
+        
+        .col-md-8 {
+            background: #fff;
+            border-radius: 7px;
+            padding: 20px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+        .list-group {
+            margin-bottom: 20px;
+        }
+        
+        .list-group-item {
+            justify-content: space-between;
+        }
+        
+        .btn-primary {
+            background-color: #1BB295;
+            border-color: #1BB295;
+        }
+        
+        .btn-primary:hover {
+            background-color: #179b81;
+            border-color: #179b81;
+        }
+        
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #218838;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2>User Dashboard-<%= imp %></h2>
+                <hr>
+                <% if (achievements.length > 0) { %>
+                    <h3>Achievements</h3>
+                    <ul class="list-group">
+                        <% achievements.forEach(function(achievement) { %>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span><%= achievement.eventName %></span>
+                                <button type="button" class="btn btn-primary btn-sm" onclick="redirectToEventDetails()">Details</button>
+                                <script>
+                                                function redirectToEventDetails(eventId) {
+                                                    // Redirect to the event details page
+                                                    const rollNumber='<%= imp %>';
+                                                    const eventName='<%= achievement.eventName %>';
+                                                    window.location.href = `/display-achievement/${rollNumber}/${eventName}`;
+                                                }
+                                            </script>
+                            </li>
+                        <% }); %>
+                    </ul>
+                <% } else { %>
+                    <p>No achievements found.</p>
+                <% } %>
+                
+                <!-- Button to add achievements -->
+                                <button type="button" class="btn btn-success mt-3" onclick="redirectToAchievements()">Add Achievement</button>
+                                <button type="button" class="btn btn-success mt-3"><a style="color: white;" href="/logout1">Logout</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+   
+
+<script>
+    function redirectToAchievements() {
+        // Redirect to the achievements page
+        const rollNumber='<%= imp %>';
+        window.location.href = `/add_achievement/${rollNumber}`; // Update the URL as needed
+    }
+</script>
+
+</body>
+</html>

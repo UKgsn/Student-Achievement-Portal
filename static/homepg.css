@@ -1,0 +1,194 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container styles */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Style for the left package details div */
+  .left-div {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .left-div img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style for the middle booking form div */
+  .middle-div {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .form-section {
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the right address div */
+  .right-div {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive layout adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-div, .middle-div, .right-div {
+      width: 100%;
+    }
+  }
+  
+  #pakdabba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#pakdabba form {
+    max-width: 350px; /* Adjust the maximum width as needed */
+    width: 100%;
+}
+
+#pakdabba .form-control {
+    width: 100%;
+}
+
+#pakdabba button {
+    width: 100%;
+}
+#pakmain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#pakmain form {
+max-width: 350px; /* Adjust the maximum width as needed */
+width: 100%;
+}
+
+#pakmain .form-control {
+width: 100%;
+}
+
+#pakmain button {
+width: 100%;
+}
+
+#pakdabba img {
+margin-left: 10px;
+}
+#pakhead{
+margin-left: 2em;
+}
+#pakdate{
+margin-top: 9em;
+margin-left: 19em;
+}  
+#pakfir{
+margin-bottom: -4em;
+}
+#datefrom{
+margin-left: 8em;
+}
+#dateto{
+margin-left: 8em;
+}
+.spe,.sigi{
+margin-left: 4em; ;
+}
+/* Reset some default styles */
+
+
+/* Header styles */
+
+/* Form styles */
+.login-grids {
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    background-color: #9a9a9a; /* Set form background color to dark grey */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(249, 248, 248, 0.5);
+}
+
+.login-right {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Input and button styles */
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fafcfa; /* Set border color to green */
+    border-radius: 4px;
+    background-color: rgb(92, 198, 71); /* Set input background color to green */
+    color: #fff; /* Set input text color to white */
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00ff00; /* Set button background color to green */
+    color: #222; /* Set button text color to dark grey */
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #007700; /* Change button background color on hover */
+}
+
+
+  #dabba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  #cpdabba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  #fpdabba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+
+
+
